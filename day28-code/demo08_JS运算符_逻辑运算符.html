@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>逻辑运算符</title>
+    <script>
+        /*
+            5. 逻辑运算符
+					&& || !
+					* 其他类型转boolean：
+	                   1. number：0或NaN为假，其他为真
+	                   2. string：除了空字符串("")，其他都是true
+	                   3. null&undefined:都是false
+	                   4. 对象：所有对象都为true
+         */
+       var flag=true;
+        document.write(flag+"<br>");
+        document.write(!flag+"<br>");
+
+        document.write("<hr>");
+
+        var flag1=3;
+        document.write(flag1+"<br>");
+        document.write(!flag1+"<br>");
+
+        var str="";
+        document.write(str+"<br>");
+        document.write(!str+"<br>");
+
+        var obj=new Data();
+        document.write(obj+"<br>");
+
+        if (obj){
+            alert(123);
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>
