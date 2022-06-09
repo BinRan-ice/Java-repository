@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>变量</title>
+    <script>
+        /*var a=3;
+        alert(a);
+        a="abc";
+        alert(a); */
+
+        /*
+            4. 变量
+                * 变量：一小块存储数据的内存空间
+                * Java语言是强类型语言，而JavaScript是弱类型语言。
+                * 强类型：在开辟变量存储空间时，定义了空间将来存储的数据的数据类型。只能存储固定类型的数据
+                * 弱类型：在开辟变量存储空间时，不定义空间将来的存储数据类型，可以存放任意类型的数据。
+                * 语法：
+                * var 变量名 = 初始化值;
+                * typeof运算符：获取变量的类型。
+                * 注：null运算后得到的是object
+         */
+
+        //定义number类型
+        var num=1;
+        var num2=1.2;
+        var num3=NaN;
+        //输出到页面上
+        document.write(num+"<br>");
+        document.write(num2+"<br>");
+        document.write(num3+"<br>");
+
+        //定义string类型
+        var str="abc";
+        var str2="def";
+        document.write(str+"----"+typeof(str)+"<br>");
+
+
+        //定义boolean类型
+        var flag=true;
+        document.write(flag+"<br>");
+
+        //定义null
+        var obj =null;
+        document.write(obj+"<br>");
+        var obj2 =undefined;
+        document.write(obj2+"<br>");
+        var obj3 ;
+        document.write(obj3+"<br>");
+    </script>
+</head>
+<body>
+
+</body>
+</html>

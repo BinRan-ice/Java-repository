@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Location</title>
+</head>
+<body>
+<input type="button" id="btn" value="刷新">
+<input type="button" id="btn1" value="去传智">
+    <script>
+        /*
+            4. Location：地址栏对象
+                1. 创建(获取)：
+                    1. window.location
+                    2. location
+
+                2. 方法：
+                    * reload()	重新加载当前文档。刷新
+                3. 属性
+                    * href	设置或返回完整的 URL。
+         */
+        let elementById = document.getElementById("btn");
+        elementById.onclick=function () {
+            location.reload();
+        }
+
+         var href=location.href;
+        alert(href);
+
+        var btn=document.getElementById("btn1");
+        btn.onclick=function () {
+            location.href="http://www.itcast.com";
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Element对象</title>
+
+</head>
+<body>
+<a href="">点我试一试</a>
+<input type="button" value="设置a标签的属性" id="btn_set">
+<input type="button" value="删除a标签的属性" id="btn_del">
+    <script>
+       /*
+            * Element：元素对象
+			1. 获取/创建：通过document来获取和创建
+			2. 方法：
+				1. removeAttribute()：删除属性
+				2. setAttribute()：设置属性
+        */
+
+       let elementById = document.getElementById(`btn_set`);
+       elementById.onclick=function () {
+           var element_a=document.getElementsByTagName("a")[0];
+           element_a.setAttribute("href","https://www.baidu.com");
+       }
+
+
+       let elementById1 = document.getElementById(`btn_del`);
+       elementById1.onclick=function () {
+           var element_a1=document.getElementsByTagName("a")[0];
+           element_a1.removeAttribute("href");
+       }
+    </script>
+</body>
+</html>

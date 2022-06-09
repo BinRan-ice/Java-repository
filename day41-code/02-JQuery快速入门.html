@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JQuery快速入门</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+
+
+<script>
+    $("body"). append("<table id='uT'> </table>");
+    $("#uT"). append("<tr><td>1</td><td>Mike</td></tr>");
+    $("#uT"). append("<tr><td>2</td><td>Nicky</td></tr>");
+
+    $("body"). append("<select id='major'></select>");
+    $("#major"). append("<option value='en'>英语</option>");
+    $("#major"). append("<option value='cs'>计算机</option>");
+    $("option[value='cs']").attr("selected",true);
+
+    $("body"). append("<ul id='menu'></ul>");
+    $("#menu"). append("<li id='home'>首页</li>");
+    $("#menu"). append("<li id='home'>联系我们</li>");
+
+</script>
+
+</body>
+</html>

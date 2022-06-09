@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTMLDOM</title>
+
+    <style>
+        .d1{
+            border: 1px solid red;
+            width: 100px;
+            height: 100px;
+        }
+
+        .d2{
+            border: 1px solid red;
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+   <div id="div1">
+       div
+   </div>
+
+   <div id="div2">
+       div
+   </div>
+<script>
+    /*
+		3. 控制元素样式
+			1. 使用元素的style属性来设置
+				如：
+					 //修改样式方式1
+			        div1.style.border = "1px solid red";
+			        div1.style.width = "200px";
+			        //font-size--> fontSize
+			        div1.style.fontSize = "20px";
+			2. 提前定义好类选择器的样式，通过元素的className属性来设置其class属性值。
+     */
+    let elementById = document.getElementById("div1");
+    elementById.onclick=function () {
+        //修改方式1
+        div1.style.border="1px solid red";
+        div1.style.width="200px";
+
+        //font-size-->fontSize
+        div1.style.fontSize="20px";
+    }
+
+    let elementById2 = document.getElementById("div2");
+    elementById2.onclick=function () {
+        elementById2.className="d1";
+    }
+</script>
+</body>
+</html>

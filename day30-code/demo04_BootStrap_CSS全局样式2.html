@@ -1,0 +1,97 @@
+
+<!--
+    1. 全局CSS样式：
+		* 按钮：class="btn btn-default"
+		* 图片：
+			*  class="img-responsive"：图片在任意尺寸都占100%
+			*  图片形状
+				*  <img src="..." alt="..." class="img-rounded">：方形
+				*  <img src="..." alt="..." class="img-circle"> ： 圆形
+				*  <img src="..." alt="..." class="img-thumbnail"> ：相框
+		* 表格
+			* table
+			* table-bordered
+			* table-hover
+		* 表单
+			* 给表单项添加：class="form-control"
+	2. 组件：
+		* 导航条
+		* 分页条
+	3. 插件：
+		* 轮播图
+-->
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <table class="table table-bordered table-hover">
+        <tr>
+            <th>编号</th>
+            <th>姓名</th>
+            <th>年龄</th>
+        </tr>
+        <tr>
+            <th>001</th>
+            <th>张三</th>
+            <th>18</th>
+        </tr>
+        <tr>
+            <th>002</th>
+            <th>张三</th>
+            <th>18</th>
+        </tr>
+        <tr>
+            <th>003</th>
+            <th>张三</th>
+            <th>18</th>
+        </tr>
+        <tr>
+            <th>004</th>
+            <th>张三</th>
+            <th>18</th>
+        </tr>
+    </table>
+    <hr>
+    <hr>
+    <hr>
+
+    <form>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputFile">File input</label>
+            <input type="file" id="exampleInputFile">
+            <p class="help-block">Example block-level help text here.</p>
+        </div>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox"> Check me out
+            </label>
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+</body>
+</html>
+</html>
